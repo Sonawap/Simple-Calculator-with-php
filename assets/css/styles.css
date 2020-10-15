@@ -1,0 +1,21 @@
+body{
+  background:rgb(248,246,247);
+}
+
+div.container{
+}
+
+.form-con{
+  background:#fff;
+  padding:30px;
+  margin-top:70px;
+}
+
+div.col-md-6{
+  margin-bottom:10px;
+}
+
+div.col-md-4{
+  margin-bottom:10px;
+}
+
