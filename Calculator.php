@@ -1,6 +1,12 @@
 <?php 
 ////declaring the variables
-$result = "0";
+$result = 0;
+$number1 = 0;
+$number2 = 0;
+
+
+////////Asigning form value to variable
+
 $number1 = $_POST["number1"];
 $number2 = $_POST["number2"];
 
@@ -17,8 +23,9 @@ if (isset($_POST['mutiply'])) {
 }elseif (isset($_POST['minus'])) {
 	$result = $number1 - $number2;
 }elseif (isset($_POST['avarage'])) {
-	$sum = $number1 + $number2;
-	$result = $sum/2;
+	$result = $number1 % $number2;
+}elseif (isset($_POST['exponential'])) {
+	$result = $number1 ** $number2;
 }
 
 ?>
@@ -35,7 +42,7 @@ if (isset($_POST['mutiply'])) {
 
 <body>
     <div class="container">
-        <h1 class="text-center">Simple Calculator - Github/sonawap</h1>
+        <h1 class="text-center">Simple Calculator - <a href="https://github.com/Sonawap/Simple-Calculator-with-php" target="_blank">Github</a></h1>
         <div class="col-md-6 col-md-offset-3 form-con">
             <h1 class="text-center">Basic Calculator</h1>
             <div class="row">
@@ -63,7 +70,10 @@ if (isset($_POST['mutiply'])) {
                             <button class="btn btn-primary btn-lg" name="minus" type="submit">Minus </button>
                         </div>
                         <div class="col-md-4">
-                            <button class="btn btn-primary btn-lg" name="avarage" type="submit">Avarage </button>
+                            <button class="btn btn-primary btn-lg" name="modulus" type="submit">Modulus </button>
+                        </div>
+                         <div class="col-md-4">
+                            <button class="btn btn-primary btn-lg" name="exponential" type="submit">Exponential </button>
                         </div>
                         <div class="col-md-12">
                             <h2>Result = <?php echo $result ?></h2></div>
