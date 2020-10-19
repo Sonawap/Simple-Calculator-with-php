@@ -49,7 +49,7 @@
 
     $password = array(
                         "$names[0]" => "paul",
-                        "$names[1]" => "S",
+                        "$names[1]" => "Sola",
                         "$names[2]" => 1234.5,
                         "$names[3]" => "sonawap"
                     );
