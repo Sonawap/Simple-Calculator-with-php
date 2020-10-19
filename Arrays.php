@@ -37,6 +37,11 @@
     echo "<br><br><br>";
 
 
+    // For Confirmation that the Value was changed
+
+    var_dump($names);
+
+
 
 
     //  *************** Associative Arrays  ***************
